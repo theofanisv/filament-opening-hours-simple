@@ -5,6 +5,9 @@
 
 A comprehensive Filament v4 package providing UI components for [spatie/opening-hours](https://github.com/spatie/opening-hours).
 
+> [!NOTE]
+> This package is AI-generated.
+
 ## Features
 
 - 📝 **Form Input Component** - Intuitive day-by-day editing with real-time validation
