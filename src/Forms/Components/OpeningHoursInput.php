@@ -97,7 +97,7 @@ class OpeningHoursInput
             ->label($label)
             ->placeholder(__('filament-opening-hours::opening-hours.time_range_placeholder'))
             ->helperText(__('filament-opening-hours::opening-hours.time_range_format'))
-            ->formatStateUsing(function ($state, $statePath, Model $record, Field $component, LivewireComponent $livewire) use ($day) {
+            ->formatStateUsing(function ($state) {
                 return is_array($state) ? implode(',', $state) : $state;
             })
             ->dehydrateStateUsing(fn ($state) => $state ? array_filter(explode(',', str_replace(' ', '', $state))) : [])
